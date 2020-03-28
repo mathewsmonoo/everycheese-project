@@ -1,0 +1,17 @@
+[33mcommit 472548e145f9b9cdd77d6f2aa2acd5caa91d3e33[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: mathewsmonoo <m.monoo@aluno.ifsp.edu.br>
+Date:   Thu Mar 26 19:16:05 2020 -0300
+
+    Adding bio field to user model, views, templates.
+
+[33mcommit 85fad4f5754d332ecce8375d264eeb15c1436c15[m
+Author: mathewsmonoo <m.monoo@aluno.ifsp.edu.br>
+Date:   Tue Mar 24 01:09:32 2020 -0300
+
+    Updated views.py
+
+[33mcommit 43528d9c9fec0112627ee9791552bfe53827394e[m
+Author: mathewsmonoo <m.monoo@aluno.ifsp.edu.br>
+Date:   Tue Mar 24 00:37:32 2020 -0300
+
+    Boilerplate files generated from the 'django-crash-starter' project template
