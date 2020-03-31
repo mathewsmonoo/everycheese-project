@@ -9,6 +9,7 @@ from django.db import models
 class Cheese(models.Model):
     name = models.CharField("Name of Cheese", max_length=255)
     #slug = models.AutoSlugField("Cheese Address", unique=True, always_update=False, populate_from="name")
+    slug = models.SlugField(default=name)
     description = models.TextField("Description", blank=True)
 
     class Firmness(models.TextChoices):
