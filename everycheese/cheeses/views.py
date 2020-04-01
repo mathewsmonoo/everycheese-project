@@ -1,11 +1,14 @@
 from django.shortcuts import render
-from django.views.generic import DetailView, ListView
+from django.views.generic import CreateView, DetailView, ListView
 
 from .models import Cheese
 
-
-class CheeseListView(ListView):
+class CheeseDetailView(DetailView):
     model = Cheese
 
-class CheeseDetailView(DetailView):
+class CheeseCreateView(CreateView):
+    model = Cheese
+    fields = ['name', 'description', 'firmness', 'country_of_origin']
+
+class CheeseListView(ListView):
     model = Cheese
