@@ -1,8 +1,9 @@
+from django.conf import settings
 from django.db import models
 from django.urls import reverse
-
 from django_countries.fields import CountryField
 from django_extensions.db.fields import AutoSlugField
+
 from model_utils.models import TimeStampedModel
 '''
 TimeStampedModel automatically gives the model created and modified fields
@@ -22,6 +23,9 @@ class Cheese(TimeStampedModel):
         HARD =  "hard","Hard"
 
     firmness = models.CharField("Firmness", max_length=20, choices=Firmness.choices, default=Firmness.UNSPECIFIED)
+
+    creator = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)
+    
     def __str__(self):
         return self.name
 
