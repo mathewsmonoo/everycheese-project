@@ -1,6 +1,6 @@
 EveryCheese
 ==============================
+"The Ultimate Cheese Index!"
 
-The Ultimate Cheese Index!
-
-For more information, see TODO.
+Finished project and book at 02/Mar/2020.
+This repo will be kept as a reference project (as suggested) for future development with Django.
