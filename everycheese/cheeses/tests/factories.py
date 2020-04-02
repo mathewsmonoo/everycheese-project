@@ -1,7 +1,8 @@
-from django.template.defaultfilters import slugify
-
 import factory
 import factory.fuzzy
+import pytest
+from django.template.defaultfilters import slugify
+
 from everycheese.users.tests.factories import UserFactory
 
 from ..models import Cheese
@@ -29,3 +30,7 @@ In the shell, type this:
             -> <Cheese: sGwDovpLpggc>
 
 '''
+
+@pytest.fixture
+def cheese():
+    return CheeseFactory()
