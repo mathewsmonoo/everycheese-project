@@ -1,9 +1,8 @@
 from django.template.defaultfilters import slugify
 
-from everycheese.users.tests.factories import UserFactory
-
 import factory
 import factory.fuzzy
+from everycheese.users.tests.factories import UserFactory
 
 from ..models import Cheese
 
